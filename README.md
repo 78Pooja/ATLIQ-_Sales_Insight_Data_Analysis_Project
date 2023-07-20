@@ -16,14 +16,31 @@ By having access to a user-friendly dashboard with real-time data, the Sales Dir
 
 ## Problem Statement
 ---
-1.  Revenue breakdown by cities.
-2.  Revenue breakdown by years & months. 
-3.  Top 5 customers by revenue & sales quantity.
-4.  Top 5 Products by revenue.
-5.  Net Profit & Profit Margin by Market.
+-  Detailed breakdown of the revenue generated in each of the cities where we have a presence.
+-  Comprehensive breakdown of the company's revenue over the past few years and months to understand any trends or patterns. 
+-  The top 5 customers are in terms of both revenue generated and the quantity of products sold.
+-  The list of the top 5 best-performing products based on revenue.
+-  The net profit and profit margin figures for each market segment.
 
 ## Skills
 ---
 - SQL
 - Power BI
 
+## Project Planning and AIMS GIRD
+---
+1. Purpose -  To unlock sales insights that are not visible before for sales team for decision support & automate them to reduced manual time spent in data gathering.
+2. Stakeholders -
+        •	Sales Director
+        •	I.T. Team
+        •	Customer Service Team
+        •	Data & Analytics Team
+3. End Result -  An automated dashboard providing quick & latest sales insights in order to support data driven decision making.
+4. Success Criteria -
+        •	Dashboards uncovering sales order insights with latest data available.
+        •	Sales team able to take better decision & prove 10% cost savings of total spend.
+        •	Sales analysts stop data gathering manually in order to save 20% of their business time & reinvest it in value added activity.
+
+
+## Data Analysis using SQL
+---
