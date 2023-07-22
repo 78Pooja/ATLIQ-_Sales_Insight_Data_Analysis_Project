@@ -31,16 +31,59 @@ By having access to a user-friendly dashboard with real-time data, the Sales Dir
 ---
 1. Purpose -  To unlock sales insights that are not visible before for sales team for decision support & automate them to reduced manual time spent in data gathering.
 2. Stakeholders -
-        •	Sales Director
-        •	I.T. Team
-        •	Customer Service Team
-        •	Data & Analytics Team
-3. End Result -  An automated dashboard providing quick & latest sales insights in order to support data driven decision making.
-4. Success Criteria -
-        •	Dashboards uncovering sales order insights with latest data available.
-        •	Sales team able to take better decision & prove 10% cost savings of total spend.
-        •	Sales analysts stop data gathering manually in order to save 20% of their business time & reinvest it in value added activity.
+   
+        • Sales Director
+   
+        • I.T. Team
+   
+        • Customer Service Team
+   
+        • Data & Analytics Team
+   
+4. End Result -  An automated dashboard providing quick & latest sales insights in order to support data driven decision making.
+5. Success Criteria -
+   
+        • Dashboards uncovering sales order insights with latest data available.
+   
+        • Sales team able to take better decision & prove 10% cost savings of total spend.
+   
+        • Sales analysts stop data gathering manually in order to save 20% of their business time & reinvest it in value added activity.
 
 
 ## Data Analysis using SQL
 ---
+
+• Show all customer records
+           
+           SELECT * FROM customers;
+
+• Show total number of customers
+           
+           SELECT count(*) FROM customers;
+
+• Show transactions for Chennai market (market code for chennai is Mark001)
+           
+           SELECT * FROM transactions where market_code='Mark001';
+
+• Show distrinct product codes that were sold in chennai.
+           
+           SELECT distinct product_code FROM transactions where market_code='Mark001';
+
+• Show transactions where currency is US dollars.
+           
+           SELECT * from transactions where currency="USD"
+
+• Show transactions in 2020 join by date table.
+           
+           SELECT transactions., date. FROM transactions INNER JOIN date ON 
+           transactions.order_date=date.date where date.year=2020;
+
+• Show total revenue in year 2020.
+           
+           SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date 
+           where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";
+
+• Show total revenue in year 2020, January Month.
+    
+           SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date 
+           where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");
