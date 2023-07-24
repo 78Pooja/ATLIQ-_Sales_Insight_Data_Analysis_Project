@@ -93,3 +93,23 @@ By having access to a user-friendly dashboard with real-time data, the Sales Dir
            where sales.date.year = 2020 
            and sales.date.month_name="January" 
            and (transactions.currency="INR\r" or transactions.currency="USD\r");
+
+## Power BI Dashboard
+---
+
+![](1.png)
+
+---
+![](2.png)
+
+---
+![](3.png)
+
+---
+![](4.png)
+
+---
+![](5.png)
+
+---
+
